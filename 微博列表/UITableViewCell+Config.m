@@ -12,5 +12,16 @@
 - (void)configData:(WeiboModel *)weibo {
     UILabel *textLabel = [self viewWithTag:102];
     textLabel.text = weibo.weibo_text;
+
+    NSLog(@"weibo_text:%@",weibo.weibo_text);
+
+//    PhotoCollectionView *collectView = [self viewWithTag:1011];
+//    collectView.images_url = weibo.weibo_imageUrls;
+//    collectView.delegate = collectView;
+//    collectView.dataSource = collectView;
+//    [collectView reloadData];
+//
+//    [collectView sizeToFit];
 }
+
 @end

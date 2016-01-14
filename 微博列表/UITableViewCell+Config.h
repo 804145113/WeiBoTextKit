@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PhotoCollectionView.h"
 #import "WeiboModel.h"
+
+#define PHOTOWEIDTH (CGRectGetWidth([UIScreen mainScreen].bounds) - 40)
+#define PHOTOHEIGHT 120
 
 @interface UITableViewCell (Config)
 

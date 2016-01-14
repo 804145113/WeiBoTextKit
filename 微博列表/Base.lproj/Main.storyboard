@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Weibo List View Controller-->
@@ -14,26 +15,73 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weiboCell" rowHeight="156" id="Zbo-WS-3xY">
-                                <rect key="frame" x="0.0" y="92" width="600" height="156"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weiboCell2" rowHeight="193" id="gJJ-0Z-Jms">
+                                <rect key="frame" x="0.0" y="92" width="600" height="193"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zbo-WS-3xY" id="oKz-83-c4D">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="155"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gJJ-0Z-Jms" id="P8O-Xf-huV">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="192"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="600" translatesAutoresizingMaskIntoConstraints="NO" id="FWu-aW-Vqf">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="155"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="600" translatesAutoresizingMaskIntoConstraints="NO" id="c1o-yy-Si0">
+                                            <rect key="frame" x="12" y="8" width="580" height="168"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1011" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dxy-Ea-gT2" customClass="PhotoCollectionView">
+                                            <rect key="frame" x="12" y="184" width="580" height="0.0"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" id="2JK-w6-gkw"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="6" id="mQx-6X-gpW">
+                                                <size key="itemSize" width="130" height="140"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="2W3-nt-8zE" customClass="PhotoCollectionViewCell">
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="140"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="140"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" tag="1012" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zxy-KQ-ELC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="140"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstItem="zxy-KQ-ELC" firstAttribute="top" secondItem="2W3-nt-8zE" secondAttribute="top" id="T7e-Nz-umz"/>
+                                                        <constraint firstAttribute="bottom" secondItem="zxy-KQ-ELC" secondAttribute="bottom" id="aAT-4x-L9f"/>
+                                                        <constraint firstAttribute="trailing" secondItem="zxy-KQ-ELC" secondAttribute="trailing" id="yQh-P5-xDo"/>
+                                                        <constraint firstItem="zxy-KQ-ELC" firstAttribute="leading" secondItem="2W3-nt-8zE" secondAttribute="leading" id="yfu-ok-pkj"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="photoImage" destination="zxy-KQ-ELC" id="tSE-gH-5wQ"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                        </collectionView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="FWu-aW-Vqf" firstAttribute="leading" secondItem="oKz-83-c4D" secondAttribute="leading" id="fBi-1j-rzc"/>
-                                        <constraint firstItem="FWu-aW-Vqf" firstAttribute="top" secondItem="oKz-83-c4D" secondAttribute="top" id="mWK-l0-tFm"/>
-                                        <constraint firstAttribute="trailing" secondItem="FWu-aW-Vqf" secondAttribute="trailing" id="p3p-YP-MYc"/>
-                                        <constraint firstAttribute="bottom" secondItem="FWu-aW-Vqf" secondAttribute="bottom" id="yML-d1-QhE"/>
+                                        <constraint firstAttribute="bottom" secondItem="dxy-Ea-gT2" secondAttribute="bottom" constant="8" id="2vr-GG-1Hh"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="c1o-yy-Si0" secondAttribute="bottom" constant="8" id="Dyp-i1-Ljh"/>
+                                        <constraint firstItem="dxy-Ea-gT2" firstAttribute="top" secondItem="c1o-yy-Si0" secondAttribute="bottom" constant="8" id="Sga-Vg-yU7"/>
+                                        <constraint firstItem="dxy-Ea-gT2" firstAttribute="leading" secondItem="P8O-Xf-huV" secondAttribute="leading" constant="12" id="cod-I1-l3w"/>
+                                        <constraint firstAttribute="trailing" secondItem="dxy-Ea-gT2" secondAttribute="trailing" constant="8" id="gji-hq-Qvf"/>
+                                        <constraint firstAttribute="trailing" secondItem="c1o-yy-Si0" secondAttribute="trailing" constant="8" id="lSg-wi-7Uq"/>
+                                        <constraint firstItem="c1o-yy-Si0" firstAttribute="top" secondItem="P8O-Xf-huV" secondAttribute="top" constant="8" id="p8C-Ve-F9h"/>
+                                        <constraint firstItem="c1o-yy-Si0" firstAttribute="leading" secondItem="P8O-Xf-huV" secondAttribute="leading" constant="12" id="xfE-RK-Zu5"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Sga-Vg-yU7"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

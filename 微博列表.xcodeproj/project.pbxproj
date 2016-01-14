@@ -11,6 +11,8 @@
 		A391CDE11C474ADF0068DB34 /* WeiboModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A391CDE01C474ADF0068DB34 /* WeiboModel.m */; };
 		A3D074FE1C47720F0052752E /* UITableViewCell+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D074FD1C47720F0052752E /* UITableViewCell+Config.m */; };
 		A3D075011C4774AB0052752E /* MBProgressHUD+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D075001C4774AB0052752E /* MBProgressHUD+Loading.m */; };
+		A3D075041C47810A0052752E /* PhotoCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D075031C47810A0052752E /* PhotoCollectionView.m */; };
+		A3D075071C4783830052752E /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D075061C4783830052752E /* PhotoCollectionViewCell.m */; };
 		A3FB2D0C1C464E5A00A4C10F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D0B1C464E5A00A4C10F /* main.m */; };
 		A3FB2D0F1C464E5A00A4C10F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D0E1C464E5A00A4C10F /* AppDelegate.m */; };
 		A3FB2D121C464E5B00A4C10F /* WeiboListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D111C464E5B00A4C10F /* WeiboListViewController.m */; };
@@ -29,6 +31,10 @@
 		A3D074FD1C47720F0052752E /* UITableViewCell+Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Config.m"; sourceTree = "<group>"; };
 		A3D074FF1C4774AB0052752E /* MBProgressHUD+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Loading.h"; sourceTree = "<group>"; };
 		A3D075001C4774AB0052752E /* MBProgressHUD+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Loading.m"; sourceTree = "<group>"; };
+		A3D075021C47810A0052752E /* PhotoCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionView.h; sourceTree = "<group>"; };
+		A3D075031C47810A0052752E /* PhotoCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionView.m; sourceTree = "<group>"; };
+		A3D075051C4783830052752E /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		A3D075061C4783830052752E /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		A3FB2D071C464E5900A4C10F /* 微博列表.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微博列表.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB2D0B1C464E5A00A4C10F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A3FB2D0D1C464E5A00A4C10F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,6 +90,10 @@
 			children = (
 				A3FB2D0D1C464E5A00A4C10F /* AppDelegate.h */,
 				A3FB2D0E1C464E5A00A4C10F /* AppDelegate.m */,
+				A3D075021C47810A0052752E /* PhotoCollectionView.h */,
+				A3D075031C47810A0052752E /* PhotoCollectionView.m */,
+				A3D075051C4783830052752E /* PhotoCollectionViewCell.h */,
+				A3D075061C4783830052752E /* PhotoCollectionViewCell.m */,
 				A3D074FF1C4774AB0052752E /* MBProgressHUD+Loading.h */,
 				A3D075001C4774AB0052752E /* MBProgressHUD+Loading.m */,
 				A3D074FC1C47720F0052752E /* UITableViewCell+Config.h */,
@@ -242,7 +252,9 @@
 				A3FB2D121C464E5B00A4C10F /* WeiboListViewController.m in Sources */,
 				A3D074FE1C47720F0052752E /* UITableViewCell+Config.m in Sources */,
 				A3D075011C4774AB0052752E /* MBProgressHUD+Loading.m in Sources */,
+				A3D075041C47810A0052752E /* PhotoCollectionView.m in Sources */,
 				A3FB2D0F1C464E5A00A4C10F /* AppDelegate.m in Sources */,
+				A3D075071C4783830052752E /* PhotoCollectionViewCell.m in Sources */,
 				A391CDE11C474ADF0068DB34 /* WeiboModel.m in Sources */,
 				A3FB2D0C1C464E5A00A4C10F /* main.m in Sources */,
 			);

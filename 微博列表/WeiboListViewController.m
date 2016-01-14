@@ -57,9 +57,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"weiboCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"weiboCell2"];
     WeiboModel *weibo = [self.weibos objectAtIndex:indexPath.row];
     [cell configData:weibo];
+    
     return cell;
 }
 
@@ -70,12 +71,16 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (!self.prototypeCell)
     {
-        self.prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:@"weiboCell"];
+        self.prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:@"weiboCell2"];
     }
+
     WeiboModel *weibo = [self.weibos objectAtIndex:indexPath.row];
     [self.prototypeCell configData:weibo];
+
     [self.prototypeCell layoutIfNeeded];
+
     CGFloat height = [self.prototypeCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    
     return height + 10;
 }
 
