@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Weibo List View Controller-->
@@ -23,33 +22,33 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="600" translatesAutoresizingMaskIntoConstraints="NO" id="c1o-yy-Si0">
-                                            <rect key="frame" x="12" y="8" width="580" height="168"/>
+                                            <rect key="frame" x="12" y="8" width="580" height="48"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1011" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dxy-Ea-gT2" customClass="PhotoCollectionView">
-                                            <rect key="frame" x="12" y="184" width="580" height="0.0"/>
+                                            <rect key="frame" x="12" y="64" width="580" height="120"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" id="2JK-w6-gkw"/>
+                                                <constraint firstAttribute="height" constant="120" id="dOf-VE-sf0"/>
                                             </constraints>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="6" id="mQx-6X-gpW">
-                                                <size key="itemSize" width="130" height="140"/>
+                                                <size key="itemSize" width="112" height="120"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="2W3-nt-8zE" customClass="PhotoCollectionViewCell">
-                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="140"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="112" height="120"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="140"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="112" height="120"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" tag="1012" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zxy-KQ-ELC">
-                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="140"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="112" height="120"/>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -68,20 +67,14 @@
                                         </collectionView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="dxy-Ea-gT2" secondAttribute="bottom" constant="8" id="2vr-GG-1Hh"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="c1o-yy-Si0" secondAttribute="bottom" constant="8" id="Dyp-i1-Ljh"/>
-                                        <constraint firstItem="dxy-Ea-gT2" firstAttribute="top" secondItem="c1o-yy-Si0" secondAttribute="bottom" constant="8" id="Sga-Vg-yU7"/>
-                                        <constraint firstItem="dxy-Ea-gT2" firstAttribute="leading" secondItem="P8O-Xf-huV" secondAttribute="leading" constant="12" id="cod-I1-l3w"/>
-                                        <constraint firstAttribute="trailing" secondItem="dxy-Ea-gT2" secondAttribute="trailing" constant="8" id="gji-hq-Qvf"/>
+                                        <constraint firstItem="dxy-Ea-gT2" firstAttribute="top" secondItem="c1o-yy-Si0" secondAttribute="bottom" constant="8" id="AXD-CY-YGD"/>
+                                        <constraint firstAttribute="bottom" secondItem="dxy-Ea-gT2" secondAttribute="bottom" constant="8" id="J24-wM-5YV"/>
+                                        <constraint firstItem="dxy-Ea-gT2" firstAttribute="leading" secondItem="P8O-Xf-huV" secondAttribute="leading" constant="12" id="N8E-AT-IO8"/>
+                                        <constraint firstAttribute="trailing" secondItem="dxy-Ea-gT2" secondAttribute="trailing" constant="8" id="fCw-2n-WbB"/>
                                         <constraint firstAttribute="trailing" secondItem="c1o-yy-Si0" secondAttribute="trailing" constant="8" id="lSg-wi-7Uq"/>
                                         <constraint firstItem="c1o-yy-Si0" firstAttribute="top" secondItem="P8O-Xf-huV" secondAttribute="top" constant="8" id="p8C-Ve-F9h"/>
                                         <constraint firstItem="c1o-yy-Si0" firstAttribute="leading" secondItem="P8O-Xf-huV" secondAttribute="leading" constant="12" id="xfE-RK-Zu5"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="Sga-Vg-yU7"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

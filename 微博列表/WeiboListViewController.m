@@ -60,7 +60,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"weiboCell2"];
     WeiboModel *weibo = [self.weibos objectAtIndex:indexPath.row];
     [cell configData:weibo];
-    
     return cell;
 }
 
@@ -69,19 +68,19 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (!self.prototypeCell)
-    {
-        self.prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:@"weiboCell2"];
-    }
-
     WeiboModel *weibo = [self.weibos objectAtIndex:indexPath.row];
-    [self.prototypeCell configData:weibo];
-
-    [self.prototypeCell layoutIfNeeded];
-
-    CGFloat height = [self.prototypeCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-    
-    return height + 10;
+    CGFloat exter = 0;
+    if (weibo.weibo_imageUrls.count > 0 && weibo.weibo_imageUrls.count <= 3) {
+        exter = - PHOTOHEIGHT;
+    } else if (weibo.weibo_imageUrls.count > 3 && weibo.weibo_imageUrls.count <= 6) {
+        exter = PHOTOHEIGHT * 2;
+    }
+    else if(weibo.weibo_imageUrls.count > 6) {
+        exter = PHOTOHEIGHT * 3;
+    };
+    return [tableView fd_heightForCellWithIdentifier:@"weiboCell2" configuration:^(UITableViewCell *cell) {
+        [cell configData:weibo];
+    }] + exter;
 }
 
 - (void)pullRefresh {

@@ -15,13 +15,11 @@
 
     NSLog(@"weibo_text:%@",weibo.weibo_text);
 
-//    PhotoCollectionView *collectView = [self viewWithTag:1011];
-//    collectView.images_url = weibo.weibo_imageUrls;
-//    collectView.delegate = collectView;
-//    collectView.dataSource = collectView;
-//    [collectView reloadData];
-//
-//    [collectView sizeToFit];
+    PhotoCollectionView *collectView = [self viewWithTag:1011];
+    collectView.delegate = collectView;
+    collectView.dataSource = collectView;
+    collectView.images_url = weibo.weibo_imageUrls;
+
 }
 
 @end
