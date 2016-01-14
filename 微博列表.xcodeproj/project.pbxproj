@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		862EE53C369DEE01E5F4DA92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AACCF8C95FEBFC59BBD6431 /* libPods.a */; };
 		A391CDE11C474ADF0068DB34 /* WeiboModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A391CDE01C474ADF0068DB34 /* WeiboModel.m */; };
+		A3D074FE1C47720F0052752E /* UITableViewCell+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D074FD1C47720F0052752E /* UITableViewCell+Config.m */; };
+		A3D075011C4774AB0052752E /* MBProgressHUD+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D075001C4774AB0052752E /* MBProgressHUD+Loading.m */; };
 		A3FB2D0C1C464E5A00A4C10F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D0B1C464E5A00A4C10F /* main.m */; };
 		A3FB2D0F1C464E5A00A4C10F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D0E1C464E5A00A4C10F /* AppDelegate.m */; };
 		A3FB2D121C464E5B00A4C10F /* WeiboListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D111C464E5B00A4C10F /* WeiboListViewController.m */; };
@@ -23,6 +25,10 @@
 		9AACCF8C95FEBFC59BBD6431 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A391CDDF1C474ADF0068DB34 /* WeiboModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboModel.h; sourceTree = "<group>"; };
 		A391CDE01C474ADF0068DB34 /* WeiboModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboModel.m; sourceTree = "<group>"; };
+		A3D074FC1C47720F0052752E /* UITableViewCell+Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Config.h"; sourceTree = "<group>"; };
+		A3D074FD1C47720F0052752E /* UITableViewCell+Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Config.m"; sourceTree = "<group>"; };
+		A3D074FF1C4774AB0052752E /* MBProgressHUD+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Loading.h"; sourceTree = "<group>"; };
+		A3D075001C4774AB0052752E /* MBProgressHUD+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Loading.m"; sourceTree = "<group>"; };
 		A3FB2D071C464E5900A4C10F /* 微博列表.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微博列表.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB2D0B1C464E5A00A4C10F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A3FB2D0D1C464E5A00A4C10F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +84,10 @@
 			children = (
 				A3FB2D0D1C464E5A00A4C10F /* AppDelegate.h */,
 				A3FB2D0E1C464E5A00A4C10F /* AppDelegate.m */,
+				A3D074FF1C4774AB0052752E /* MBProgressHUD+Loading.h */,
+				A3D075001C4774AB0052752E /* MBProgressHUD+Loading.m */,
+				A3D074FC1C47720F0052752E /* UITableViewCell+Config.h */,
+				A3D074FD1C47720F0052752E /* UITableViewCell+Config.m */,
 				A3FB2D101C464E5A00A4C10F /* WeiboListViewController.h */,
 				A3FB2D111C464E5B00A4C10F /* WeiboListViewController.m */,
 				A391CDDF1C474ADF0068DB34 /* WeiboModel.h */,
@@ -230,6 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3FB2D121C464E5B00A4C10F /* WeiboListViewController.m in Sources */,
+				A3D074FE1C47720F0052752E /* UITableViewCell+Config.m in Sources */,
+				A3D075011C4774AB0052752E /* MBProgressHUD+Loading.m in Sources */,
 				A3FB2D0F1C464E5A00A4C10F /* AppDelegate.m in Sources */,
 				A391CDE11C474ADF0068DB34 /* WeiboModel.m in Sources */,
 				A3FB2D0C1C464E5A00A4C10F /* main.m in Sources */,
@@ -343,6 +355,7 @@
 			baseConfigurationReference = 04392C155B2A1DE43F9EBA64 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "微博列表/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.txh.----";
@@ -355,6 +368,7 @@
 			baseConfigurationReference = 43C02332B762A9D8D2F505B3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "微博列表/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.txh.----";

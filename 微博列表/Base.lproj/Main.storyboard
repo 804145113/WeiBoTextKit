@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Kh-Nb-Aux">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q7b-NB-OXm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -15,7 +15,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weiboCell" rowHeight="156" id="Zbo-WS-3xY">
-                                <rect key="frame" x="0.0" y="28" width="600" height="156"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="156"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zbo-WS-3xY" id="oKz-83-c4D">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="155"/>
@@ -42,8 +42,27 @@
                             <outlet property="delegate" destination="7Kh-Nb-Aux" id="HJe-wr-DmS"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="nUd-k4-SMa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IAB-IW-88q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="118"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7qp-Qx-SgX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q7b-NB-OXm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6IP-r4-z4B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Kh-Nb-Aux" kind="relationship" relationship="rootViewController" id="rGt-kA-27e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbf-e7-qAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="461" y="118"/>
         </scene>

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <WeiboSDK.h>
+#import <MBProgressHUD.h>
 #import <WBHttpRequest+WeiboUser.h>
 #import <WBHttpRequest.h>
 

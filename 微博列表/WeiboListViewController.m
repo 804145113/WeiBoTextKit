@@ -14,6 +14,8 @@
 #define tCode @"5190d0d09126ca62529ba49dc9da79c9"
 
 #import "WeiboListViewController.h"
+#import "UITableViewCell+Config.h"
+#import "MBProgressHUD+Loading.h"
 #import "WeiboModel.h"
 
 @interface WeiboListViewController ()
@@ -27,12 +29,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
+    self.title = @"微博信息";
     // https://api.weibo.com/oauth2/authorize?client_id=2930554585&redirect_uri=https://github.com/804145113 浏览器里面打开获取 authorization code 更新 tCode 值
 
     // https://api.weibo.com/2/statuses/public_timeline.json?access_token=2.00RFRlhF8H_1MD376daaed7d4Xk1UB&count=100 获取微博信息浏览器打开
 
     [self addHeaderRefresh];
+    [MBProgressHUD wbShowText:@"载入中" inView:self.tableView];
+    [self pullRefresh];
 }
 
 - (void)addHeaderRefresh {
@@ -46,6 +50,7 @@
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableLeaves error:nil];
         WeiboModel *model = [[WeiboModel alloc] init];
         self.weibos = [model weibos:dic];
+        [MBProgressHUD wbHideHudInView:self.view];
         [self.refreshControl endRefreshing];
         [self.tableView reloadData];
     }
@@ -73,7 +78,7 @@
     textLabel.text = weibo.weibo_text;
      [self.prototypeCell layoutIfNeeded];
     CGFloat height = [self.prototypeCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-    return height + 1;
+    return height + 10;
 }
 
 - (void)pullRefresh {
