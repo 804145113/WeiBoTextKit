@@ -19,7 +19,7 @@
 @interface WeiboListViewController ()
 @property (strong, nonatomic) NSString *wbtoken;
 @property (strong, nonatomic) NSArray *weibos;
-
+@property (nonatomic, strong) UITableViewCell *prototypeCell;
 @end
 
 @implementation WeiboListViewController
@@ -64,7 +64,16 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100.f;
+    if (!self.prototypeCell)
+    {
+        self.prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:@"weiboCell"];
+    }
+    WeiboModel *weibo = [self.weibos objectAtIndex:indexPath.row];
+    UILabel *textLabel = [self.prototypeCell viewWithTag:102];
+    textLabel.text = weibo.weibo_text;
+     [self.prototypeCell layoutIfNeeded];
+    CGFloat height = [self.prototypeCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    return height + 1;
 }
 
 - (void)pullRefresh {
