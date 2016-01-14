@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h1p-M5-qVa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Kh-Nb-Aux">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--微博信息-->
-        <scene sceneID="oO6-XD-c7c">
+        <!--Weibo List View Controller-->
+        <scene sceneID="L1w-l6-aXY">
             <objects>
-                <tableViewController title="微博信息" id="h1p-M5-qVa" customClass="ViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="OTY-Il-31h">
+                <tableViewController id="7Kh-Nb-Aux" customClass="WeiboListViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="156" sectionHeaderHeight="28" sectionFooterHeight="28" id="gLN-mm-42G">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weiboCell" rowHeight="156" id="Zbo-WS-3xY">
+                                <rect key="frame" x="0.0" y="28" width="600" height="156"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zbo-WS-3xY" id="oKz-83-c4D">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="155"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWu-aW-Vqf">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="155"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="FWu-aW-Vqf" firstAttribute="leading" secondItem="oKz-83-c4D" secondAttribute="leading" id="fBi-1j-rzc"/>
+                                        <constraint firstItem="FWu-aW-Vqf" firstAttribute="top" secondItem="oKz-83-c4D" secondAttribute="top" id="mWK-l0-tFm"/>
+                                        <constraint firstAttribute="trailing" secondItem="FWu-aW-Vqf" secondAttribute="trailing" id="p3p-YP-MYc"/>
+                                        <constraint firstAttribute="bottom" secondItem="FWu-aW-Vqf" secondAttribute="bottom" id="yML-d1-QhE"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="h1p-M5-qVa" id="vI2-xA-kMc"/>
-                            <outlet property="delegate" destination="h1p-M5-qVa" id="Qjq-dw-fQ5"/>
+                            <outlet property="dataSource" destination="7Kh-Nb-Aux" id="bJc-wG-m6g"/>
+                            <outlet property="delegate" destination="7Kh-Nb-Aux" id="HJe-wr-DmS"/>
                         </connections>
                     </tableView>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gXq-xK-Owr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IAB-IW-88q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="306" y="246"/>
+            <point key="canvasLocation" x="461" y="118"/>
         </scene>
     </scenes>
 </document>

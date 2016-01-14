@@ -11,7 +11,7 @@
 		A391CDE11C474ADF0068DB34 /* WeiboModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A391CDE01C474ADF0068DB34 /* WeiboModel.m */; };
 		A3FB2D0C1C464E5A00A4C10F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D0B1C464E5A00A4C10F /* main.m */; };
 		A3FB2D0F1C464E5A00A4C10F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D0E1C464E5A00A4C10F /* AppDelegate.m */; };
-		A3FB2D121C464E5B00A4C10F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D111C464E5B00A4C10F /* ViewController.m */; };
+		A3FB2D121C464E5B00A4C10F /* WeiboListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D111C464E5B00A4C10F /* WeiboListViewController.m */; };
 		A3FB2D151C464E5B00A4C10F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB2D131C464E5B00A4C10F /* Main.storyboard */; };
 		A3FB2D171C464E5B00A4C10F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FB2D161C464E5B00A4C10F /* Assets.xcassets */; };
 		A3FB2D1A1C464E5C00A4C10F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB2D181C464E5C00A4C10F /* LaunchScreen.storyboard */; };
@@ -27,8 +27,8 @@
 		A3FB2D0B1C464E5A00A4C10F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A3FB2D0D1C464E5A00A4C10F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A3FB2D0E1C464E5A00A4C10F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A3FB2D101C464E5A00A4C10F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A3FB2D111C464E5B00A4C10F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A3FB2D101C464E5A00A4C10F /* WeiboListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboListViewController.h; sourceTree = "<group>"; };
+		A3FB2D111C464E5B00A4C10F /* WeiboListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboListViewController.m; sourceTree = "<group>"; };
 		A3FB2D141C464E5B00A4C10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3FB2D161C464E5B00A4C10F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3FB2D191C464E5C00A4C10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 			children = (
 				A3FB2D0D1C464E5A00A4C10F /* AppDelegate.h */,
 				A3FB2D0E1C464E5A00A4C10F /* AppDelegate.m */,
-				A3FB2D101C464E5A00A4C10F /* ViewController.h */,
-				A3FB2D111C464E5B00A4C10F /* ViewController.m */,
+				A3FB2D101C464E5A00A4C10F /* WeiboListViewController.h */,
+				A3FB2D111C464E5B00A4C10F /* WeiboListViewController.m */,
 				A391CDDF1C474ADF0068DB34 /* WeiboModel.h */,
 				A391CDE01C474ADF0068DB34 /* WeiboModel.m */,
 				A3FB2D131C464E5B00A4C10F /* Main.storyboard */,
@@ -229,7 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3FB2D121C464E5B00A4C10F /* ViewController.m in Sources */,
+				A3FB2D121C464E5B00A4C10F /* WeiboListViewController.m in Sources */,
 				A3FB2D0F1C464E5A00A4C10F /* AppDelegate.m in Sources */,
 				A391CDE11C474ADF0068DB34 /* WeiboModel.m in Sources */,
 				A3FB2D0C1C464E5A00A4C10F /* main.m in Sources */,

@@ -11,8 +11,7 @@
 #import <WBHttpRequest+WeiboUser.h>
 #import <WBHttpRequest.h>
 
-@interface ViewController : UITableViewController <WBHttpRequestDelegate>
-
+@interface WeiboListViewController : UITableViewController <WBHttpRequestDelegate>
 
 @end
 

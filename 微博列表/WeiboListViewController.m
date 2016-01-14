@@ -13,15 +13,16 @@
 #define tAppSecret @"3b8147ac12b7b33a43dd66c9dc04321b"
 #define tCode @"5190d0d09126ca62529ba49dc9da79c9"
 
-#import "ViewController.h"
+#import "WeiboListViewController.h"
 #import "WeiboModel.h"
 
-@interface ViewController ()
+@interface WeiboListViewController ()
 @property (strong, nonatomic) NSString *wbtoken;
 @property (strong, nonatomic) NSArray *weibos;
+
 @end
 
-@implementation ViewController
+@implementation WeiboListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -51,18 +52,19 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"weiboCell"];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"weiboCell"];
-    }
     WeiboModel *weibo = [self.weibos objectAtIndex:indexPath.row];
-    cell.textLabel.text = weibo.weibo_text;
+    UILabel *textLabel = [cell viewWithTag:102];
+    textLabel.text = weibo.weibo_text;
     return cell;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.weibos.count;
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 200.f;
+    return 100.f;
 }
 
 - (void)pullRefresh {
