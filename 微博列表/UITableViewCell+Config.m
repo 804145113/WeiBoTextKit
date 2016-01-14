@@ -9,5 +9,8 @@
 #import "UITableViewCell+Config.h"
 
 @implementation UITableViewCell (Config)
-
+- (void)configData:(WeiboModel *)weibo {
+    UILabel *textLabel = [self viewWithTag:102];
+    textLabel.text = weibo.weibo_text;
+}
 @end

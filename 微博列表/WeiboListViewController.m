@@ -59,8 +59,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"weiboCell"];
     WeiboModel *weibo = [self.weibos objectAtIndex:indexPath.row];
-    UILabel *textLabel = [cell viewWithTag:102];
-    textLabel.text = weibo.weibo_text;
+    [cell configData:weibo];
     return cell;
 }
 
@@ -74,9 +73,8 @@
         self.prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:@"weiboCell"];
     }
     WeiboModel *weibo = [self.weibos objectAtIndex:indexPath.row];
-    UILabel *textLabel = [self.prototypeCell viewWithTag:102];
-    textLabel.text = weibo.weibo_text;
-     [self.prototypeCell layoutIfNeeded];
+    [self.prototypeCell configData:weibo];
+    [self.prototypeCell layoutIfNeeded];
     CGFloat height = [self.prototypeCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     return height + 10;
 }

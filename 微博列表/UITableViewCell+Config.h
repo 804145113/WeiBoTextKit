@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeiboModel.h"
 
 @interface UITableViewCell (Config)
+
+- (void)configData:(WeiboModel *)weibo;
 
 @end
