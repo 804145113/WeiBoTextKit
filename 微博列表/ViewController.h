@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WeiboSDK.h>
+#import <WBHttpRequest+WeiboUser.h>
+#import <WBHttpRequest.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UITableViewController <WBHttpRequestDelegate>
 
 
 @end

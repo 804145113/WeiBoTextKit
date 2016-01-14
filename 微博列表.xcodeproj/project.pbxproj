@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		862EE53C369DEE01E5F4DA92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AACCF8C95FEBFC59BBD6431 /* libPods.a */; };
+		A391CDE11C474ADF0068DB34 /* WeiboModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A391CDE01C474ADF0068DB34 /* WeiboModel.m */; };
 		A3FB2D0C1C464E5A00A4C10F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D0B1C464E5A00A4C10F /* main.m */; };
 		A3FB2D0F1C464E5A00A4C10F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D0E1C464E5A00A4C10F /* AppDelegate.m */; };
 		A3FB2D121C464E5B00A4C10F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D111C464E5B00A4C10F /* ViewController.m */; };
@@ -20,6 +21,8 @@
 		04392C155B2A1DE43F9EBA64 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		43C02332B762A9D8D2F505B3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9AACCF8C95FEBFC59BBD6431 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A391CDDF1C474ADF0068DB34 /* WeiboModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboModel.h; sourceTree = "<group>"; };
+		A391CDE01C474ADF0068DB34 /* WeiboModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboModel.m; sourceTree = "<group>"; };
 		A3FB2D071C464E5900A4C10F /* 微博列表.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微博列表.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB2D0B1C464E5A00A4C10F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A3FB2D0D1C464E5A00A4C10F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 				A3FB2D0E1C464E5A00A4C10F /* AppDelegate.m */,
 				A3FB2D101C464E5A00A4C10F /* ViewController.h */,
 				A3FB2D111C464E5B00A4C10F /* ViewController.m */,
+				A391CDDF1C474ADF0068DB34 /* WeiboModel.h */,
+				A391CDE01C474ADF0068DB34 /* WeiboModel.m */,
 				A3FB2D131C464E5B00A4C10F /* Main.storyboard */,
 				A3FB2D161C464E5B00A4C10F /* Assets.xcassets */,
 				A3FB2D181C464E5C00A4C10F /* LaunchScreen.storyboard */,
@@ -226,6 +231,7 @@
 			files = (
 				A3FB2D121C464E5B00A4C10F /* ViewController.m in Sources */,
 				A3FB2D0F1C464E5A00A4C10F /* AppDelegate.m in Sources */,
+				A391CDE11C474ADF0068DB34 /* WeiboModel.m in Sources */,
 				A3FB2D0C1C464E5A00A4C10F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
