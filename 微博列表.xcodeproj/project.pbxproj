@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		862EE53C369DEE01E5F4DA92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AACCF8C95FEBFC59BBD6431 /* libPods.a */; };
+		A377BDF91C48F1DB00E0A091 /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A377BDF81C48F1DB00E0A091 /* PhotoTableViewCell.m */; };
 		A391CDE11C474ADF0068DB34 /* WeiboModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A391CDE01C474ADF0068DB34 /* WeiboModel.m */; };
-		A3D074FE1C47720F0052752E /* UITableViewCell+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D074FD1C47720F0052752E /* UITableViewCell+Config.m */; };
 		A3D075011C4774AB0052752E /* MBProgressHUD+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D075001C4774AB0052752E /* MBProgressHUD+Loading.m */; };
 		A3D075041C47810A0052752E /* PhotoCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D075031C47810A0052752E /* PhotoCollectionView.m */; };
 		A3D075071C4783830052752E /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D075061C4783830052752E /* PhotoCollectionViewCell.m */; };
@@ -25,10 +25,10 @@
 		04392C155B2A1DE43F9EBA64 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		43C02332B762A9D8D2F505B3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9AACCF8C95FEBFC59BBD6431 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A377BDF71C48F1DB00E0A091 /* PhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewCell.h; sourceTree = "<group>"; };
+		A377BDF81C48F1DB00E0A091 /* PhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewCell.m; sourceTree = "<group>"; };
 		A391CDDF1C474ADF0068DB34 /* WeiboModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboModel.h; sourceTree = "<group>"; };
 		A391CDE01C474ADF0068DB34 /* WeiboModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboModel.m; sourceTree = "<group>"; };
-		A3D074FC1C47720F0052752E /* UITableViewCell+Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Config.h"; sourceTree = "<group>"; };
-		A3D074FD1C47720F0052752E /* UITableViewCell+Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Config.m"; sourceTree = "<group>"; };
 		A3D074FF1C4774AB0052752E /* MBProgressHUD+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Loading.h"; sourceTree = "<group>"; };
 		A3D075001C4774AB0052752E /* MBProgressHUD+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Loading.m"; sourceTree = "<group>"; };
 		A3D075021C47810A0052752E /* PhotoCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionView.h; sourceTree = "<group>"; };
@@ -92,12 +92,12 @@
 				A3FB2D0E1C464E5A00A4C10F /* AppDelegate.m */,
 				A3D075021C47810A0052752E /* PhotoCollectionView.h */,
 				A3D075031C47810A0052752E /* PhotoCollectionView.m */,
+				A377BDF71C48F1DB00E0A091 /* PhotoTableViewCell.h */,
+				A377BDF81C48F1DB00E0A091 /* PhotoTableViewCell.m */,
 				A3D075051C4783830052752E /* PhotoCollectionViewCell.h */,
 				A3D075061C4783830052752E /* PhotoCollectionViewCell.m */,
 				A3D074FF1C4774AB0052752E /* MBProgressHUD+Loading.h */,
 				A3D075001C4774AB0052752E /* MBProgressHUD+Loading.m */,
-				A3D074FC1C47720F0052752E /* UITableViewCell+Config.h */,
-				A3D074FD1C47720F0052752E /* UITableViewCell+Config.m */,
 				A3FB2D101C464E5A00A4C10F /* WeiboListViewController.h */,
 				A3FB2D111C464E5B00A4C10F /* WeiboListViewController.m */,
 				A391CDDF1C474ADF0068DB34 /* WeiboModel.h */,
@@ -250,10 +250,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3FB2D121C464E5B00A4C10F /* WeiboListViewController.m in Sources */,
-				A3D074FE1C47720F0052752E /* UITableViewCell+Config.m in Sources */,
 				A3D075011C4774AB0052752E /* MBProgressHUD+Loading.m in Sources */,
 				A3D075041C47810A0052752E /* PhotoCollectionView.m in Sources */,
 				A3FB2D0F1C464E5A00A4C10F /* AppDelegate.m in Sources */,
+				A377BDF91C48F1DB00E0A091 /* PhotoTableViewCell.m in Sources */,
 				A3D075071C4783830052752E /* PhotoCollectionViewCell.m in Sources */,
 				A391CDE11C474ADF0068DB34 /* WeiboModel.m in Sources */,
 				A3FB2D0C1C464E5A00A4C10F /* main.m in Sources */,

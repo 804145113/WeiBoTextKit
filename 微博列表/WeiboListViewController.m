@@ -14,8 +14,8 @@
 #define tCode @"5190d0d09126ca62529ba49dc9da79c9"
 
 #import "WeiboListViewController.h"
-#import "UITableViewCell+Config.h"
 #import "MBProgressHUD+Loading.h"
+#import "PhotoTableViewCell.h"
 #import "WeiboModel.h"
 
 @interface WeiboListViewController ()
@@ -57,7 +57,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"weiboCell2"];
+    PhotoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"weiboCell2"];
     WeiboModel *weibo = [self.weibos objectAtIndex:indexPath.row];
     [cell configData:weibo];
     return cell;
@@ -69,7 +69,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     WeiboModel *weibo = [self.weibos objectAtIndex:indexPath.row];
-    return [tableView fd_heightForCellWithIdentifier:@"weiboCell2" configuration:^(UITableViewCell *cell) {
+    return [tableView fd_heightForCellWithIdentifier:@"weiboCell2" configuration:^(PhotoTableViewCell *cell) {
         [cell configData:weibo];
     }];
 }

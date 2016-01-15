@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhotoCollectionViewCell : UICollectionViewCell
+
+#define PHOTOWEIDTH (CGRectGetWidth([UIScreen mainScreen].bounds) - 40)
+#define PHOTOHEIGHT 120
+
+@interface PhotoCollectionViewCell : UICollectionViewCell <UITextViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UIImageView *photoImage;
 

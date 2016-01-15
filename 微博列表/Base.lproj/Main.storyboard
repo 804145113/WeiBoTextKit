@@ -9,24 +9,18 @@
         <scene sceneID="L1w-l6-aXY">
             <objects>
                 <tableViewController id="7Kh-Nb-Aux" customClass="WeiboListViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="171" sectionHeaderHeight="28" sectionFooterHeight="28" id="gLN-mm-42G">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="171" sectionHeaderHeight="28" sectionFooterHeight="28" id="gLN-mm-42G">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weiboCell2" rowHeight="171" id="gJJ-0Z-Jms">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weiboCell2" rowHeight="171" id="gJJ-0Z-Jms" customClass="PhotoTableViewCell">
                                 <rect key="frame" x="0.0" y="92" width="600" height="171"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gJJ-0Z-Jms" id="P8O-Xf-huV">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="170"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1o-yy-Si0">
-                                            <rect key="frame" x="12" y="8" width="580" height="26"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1011" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dxy-Ea-gT2" customClass="PhotoCollectionView">
                                             <rect key="frame" x="12" y="42" width="580" height="120"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -68,16 +62,22 @@
                                                 <outlet property="constraint_height" destination="gNg-ce-pYB" id="A4w-YD-pMF"/>
                                             </connections>
                                         </collectionView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="102" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pvu-18-oWo">
+                                            <rect key="frame" x="8" y="8" width="584" height="30"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="dxy-Ea-gT2" firstAttribute="top" secondItem="c1o-yy-Si0" secondAttribute="bottom" constant="8" id="AXD-CY-YGD"/>
+                                        <constraint firstItem="pvu-18-oWo" firstAttribute="leading" secondItem="P8O-Xf-huV" secondAttribute="leading" constant="8" id="3h8-63-Peg"/>
+                                        <constraint firstItem="pvu-18-oWo" firstAttribute="top" secondItem="P8O-Xf-huV" secondAttribute="top" constant="8" id="GS3-e6-1f8"/>
                                         <constraint firstAttribute="bottom" secondItem="dxy-Ea-gT2" secondAttribute="bottom" constant="8" id="H12-iq-nnG"/>
                                         <constraint firstAttribute="bottom" secondItem="dxy-Ea-gT2" secondAttribute="bottom" constant="8" id="J24-wM-5YV"/>
                                         <constraint firstItem="dxy-Ea-gT2" firstAttribute="leading" secondItem="P8O-Xf-huV" secondAttribute="leading" constant="12" id="N8E-AT-IO8"/>
+                                        <constraint firstAttribute="trailing" secondItem="pvu-18-oWo" secondAttribute="trailing" constant="8" id="bdl-im-1of"/>
                                         <constraint firstAttribute="trailing" secondItem="dxy-Ea-gT2" secondAttribute="trailing" constant="8" id="fCw-2n-WbB"/>
-                                        <constraint firstAttribute="trailing" secondItem="c1o-yy-Si0" secondAttribute="trailing" constant="8" id="lSg-wi-7Uq"/>
-                                        <constraint firstItem="c1o-yy-Si0" firstAttribute="top" secondItem="P8O-Xf-huV" secondAttribute="top" constant="8" id="p8C-Ve-F9h"/>
-                                        <constraint firstItem="c1o-yy-Si0" firstAttribute="leading" secondItem="P8O-Xf-huV" secondAttribute="leading" constant="12" id="xfE-RK-Zu5"/>
+                                        <constraint firstItem="dxy-Ea-gT2" firstAttribute="top" secondItem="pvu-18-oWo" secondAttribute="bottom" constant="4" id="tbJ-vD-H3S"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
@@ -85,6 +85,7 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>

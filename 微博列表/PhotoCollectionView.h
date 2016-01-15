@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "PhotoCollectionViewCell.h"
-#import "UITableViewCell+Config.h"
 
 @interface PhotoCollectionView : UICollectionView
 
