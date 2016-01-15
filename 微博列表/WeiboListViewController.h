@@ -15,5 +15,6 @@
 
 @interface WeiboListViewController : UITableViewController <WBHttpRequestDelegate>
 
+
 @end
 

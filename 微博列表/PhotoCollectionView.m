@@ -12,6 +12,17 @@
 
 - (void)setImages_url:(NSArray *)images_url {
     _images_url = images_url;
+    if (_images_url.count == 0) {
+        _constraint_height.constant = 0;
+    } else if (_images_url.count >0 && _images_url.count <= 3) {
+        _constraint_height.constant = PHOTOHEIGHT;
+    }
+    else if (_images_url.count >3 && _images_url.count <= 6) {
+        _constraint_height.constant = PHOTOHEIGHT * 2;
+    }
+    else if (_images_url.count >6) {
+        _constraint_height.constant = PHOTOHEIGHT * 3;
+    }
     [self reloadData];
 }
 

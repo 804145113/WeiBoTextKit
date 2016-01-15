@@ -69,18 +69,9 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     WeiboModel *weibo = [self.weibos objectAtIndex:indexPath.row];
-    CGFloat exter = 0;
-    if (weibo.weibo_imageUrls.count > 0 && weibo.weibo_imageUrls.count <= 3) {
-        exter = - PHOTOHEIGHT;
-    } else if (weibo.weibo_imageUrls.count > 3 && weibo.weibo_imageUrls.count <= 6) {
-        exter = PHOTOHEIGHT * 2;
-    }
-    else if(weibo.weibo_imageUrls.count > 6) {
-        exter = PHOTOHEIGHT * 3;
-    };
     return [tableView fd_heightForCellWithIdentifier:@"weiboCell2" configuration:^(UITableViewCell *cell) {
         [cell configData:weibo];
-    }] + exter;
+    }];
 }
 
 - (void)pullRefresh {

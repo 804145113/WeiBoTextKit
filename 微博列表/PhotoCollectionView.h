@@ -14,5 +14,6 @@
 @interface PhotoCollectionView : UICollectionView
 
 @property (nonatomic, strong) NSArray *images_url;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraint_height;
 
 @end

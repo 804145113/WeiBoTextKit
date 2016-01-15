@@ -18,8 +18,8 @@
     PhotoCollectionView *collectView = [self viewWithTag:1011];
     collectView.delegate = collectView;
     collectView.dataSource = collectView;
-    collectView.images_url = weibo.weibo_imageUrls;
 
+    collectView.images_url = weibo.weibo_imageUrls;
 }
 
 @end
