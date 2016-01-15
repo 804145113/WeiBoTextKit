@@ -43,4 +43,10 @@
     return CGSizeMake(PHOTOWEIDTH / 3, PHOTOHEIGHT);
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *imagDic = [self.images_url objectAtIndex:indexPath.row];
+    NSString *imageUrl = [imagDic objectForKey:@"thumbnail_pic"];
+    NSLog(@"%@",imageUrl);
+}
+
 @end
