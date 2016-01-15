@@ -12,7 +12,7 @@
 #define PHOTOWEIDTH (CGRectGetWidth([UIScreen mainScreen].bounds) - 40)
 #define PHOTOHEIGHT 120
 
-@interface PhotoCollectionViewCell : UICollectionViewCell <UITextViewDelegate>
+@interface PhotoCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, weak) IBOutlet UIImageView *photoImage;
 

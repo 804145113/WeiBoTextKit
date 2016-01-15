@@ -10,6 +10,7 @@
 
 @implementation PhotoTableViewCell
 - (void)configData:(WeiboModel *)weibo {
+    _weibo = weibo;
     UITextView *textLabel = [self viewWithTag:102];
     textLabel.delegate = self;
     textLabel.attributedText = [self highlightText:weibo.weibo_text];
@@ -28,7 +29,7 @@
 
     NSRange textRange = NSMakeRange(0, text.length);
 
-    NSString *mentionPattern = @"#[A-Za-z0-9_]+";
+    NSString *mentionPattern = @"@[A-Za-z0-9_]+";
 
 
     NSRegularExpression *mentionExpression = [NSRegularExpression regularExpressionWithPattern:mentionPattern options:NSRegularExpressionCaseInsensitive error:nil];
@@ -43,9 +44,20 @@
                                          };
             [attributedString addAttributes:attributes range:result.range];
         }
-
     }];
-    
     return attributedString;
 }
+
+- (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange NS_AVAILABLE_IOS(7_0) {
+    
+    UITextView *textLabel = [self viewWithTag:102];
+    NSAttributedString *detectionType = [textLabel.attributedText attribute:@"CustomDetectionType" atIndex:characterRange.location effectiveRange:nil];
+    if([detectionType isEqual:@"Mention"]) {
+
+    }
+    NSString *text = [_weibo.weibo_text substringWithRange:characterRange];
+
+    return YES;
+}
+
 @end

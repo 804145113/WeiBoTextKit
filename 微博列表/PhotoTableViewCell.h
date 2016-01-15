@@ -10,6 +10,7 @@
 #import "WeiboModel.h"
 #import "PhotoCollectionView.h"
 
-@interface PhotoTableViewCell : UITableViewCell
+@interface PhotoTableViewCell : UITableViewCell <UITextViewDelegate>
+@property (nonatomic, strong) WeiboModel *weibo;
 - (void)configData:(WeiboModel *)weibo;
 @end

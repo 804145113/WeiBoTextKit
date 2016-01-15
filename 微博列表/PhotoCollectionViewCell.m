@@ -12,13 +12,4 @@
 
 @implementation PhotoCollectionViewCell
 
-- (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange NS_AVAILABLE_IOS(7_0) {
-
-    
-
-    return YES;
-}
-
-
-
 @end
