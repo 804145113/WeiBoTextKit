@@ -15,7 +15,7 @@
     textLabel.delegate = self;
     textLabel.attributedText = [self highlightText:weibo.weibo_text];
 
-    NSLog(@"weibo_text:%@",weibo.weibo_text);
+//    NSLog(@"weibo_text:%@",weibo.weibo_text);
 
     PhotoCollectionView *collectView = [self viewWithTag:1011];
     collectView.delegate = collectView;

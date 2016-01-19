@@ -91,7 +91,7 @@
                     self.wbtoken = @"2.00RFRlhF8H_1MD376daaed7d4Xk1UB";
                     if (self.wbtoken != nil) {
                         // 2.获取公共微博信息
-                        [WBHttpRequest requestWithAccessToken:@"2.00RFRlhF8H_1MD376daaed7d4Xk1UB" url:@"https://api.weibo.com/2/statuses/public_timeline.json" httpMethod:@"GET" params:@{@"count":@"20"} delegate:self withTag:@"101"];
+                        [WBHttpRequest requestWithAccessToken:@"2.00RFRlhF8H_1MD376daaed7d4Xk1UB" url:@"https://api.weibo.com/2/statuses/public_timeline.json" httpMethod:@"GET" params:@{@"count":@"200"} delegate:self withTag:@"101"];
                     }
                 }];
 }
