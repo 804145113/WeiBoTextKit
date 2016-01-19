@@ -9,16 +9,21 @@
 /* Begin PBXBuildFile section */
 		862EE53C369DEE01E5F4DA92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AACCF8C95FEBFC59BBD6431 /* libPods.a */; };
 		A377BDF91C48F1DB00E0A091 /* PhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A377BDF81C48F1DB00E0A091 /* PhotoTableViewCell.m */; };
+		A377BDFB1C48FCED00E0A091 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A377BDFA1C48FCED00E0A091 /* CoreFoundation.framework */; };
+		A377BDFD1C48FD3E00E0A091 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A377BDFC1C48FD3E00E0A091 /* CFNetwork.framework */; };
+		A377BDFF1C48FD5900E0A091 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A377BDFE1C48FD5900E0A091 /* Foundation.framework */; };
 		A391CDE11C474ADF0068DB34 /* WeiboModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A391CDE01C474ADF0068DB34 /* WeiboModel.m */; };
 		A3D075011C4774AB0052752E /* MBProgressHUD+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D075001C4774AB0052752E /* MBProgressHUD+Loading.m */; };
 		A3D075041C47810A0052752E /* PhotoCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D075031C47810A0052752E /* PhotoCollectionView.m */; };
 		A3D075071C4783830052752E /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D075061C4783830052752E /* PhotoCollectionViewCell.m */; };
+		A3F559611C4C7FE100D5C56C /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3F559601C4C7FE100D5C56C /* Emoticons.bundle */; };
 		A3FB2D0C1C464E5A00A4C10F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D0B1C464E5A00A4C10F /* main.m */; };
 		A3FB2D0F1C464E5A00A4C10F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D0E1C464E5A00A4C10F /* AppDelegate.m */; };
 		A3FB2D121C464E5B00A4C10F /* WeiboListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB2D111C464E5B00A4C10F /* WeiboListViewController.m */; };
 		A3FB2D151C464E5B00A4C10F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB2D131C464E5B00A4C10F /* Main.storyboard */; };
 		A3FB2D171C464E5B00A4C10F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FB2D161C464E5B00A4C10F /* Assets.xcassets */; };
 		A3FB2D1A1C464E5C00A4C10F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FB2D181C464E5C00A4C10F /* LaunchScreen.storyboard */; };
+		A3FF3F3B1C4E262E0061CD4E /* d_aini@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3FF3F3A1C4E262E0061CD4E /* d_aini@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,9 @@
 		9AACCF8C95FEBFC59BBD6431 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A377BDF71C48F1DB00E0A091 /* PhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTableViewCell.h; sourceTree = "<group>"; };
 		A377BDF81C48F1DB00E0A091 /* PhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoTableViewCell.m; sourceTree = "<group>"; };
+		A377BDFA1C48FCED00E0A091 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A377BDFC1C48FD3E00E0A091 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A377BDFE1C48FD5900E0A091 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A391CDDF1C474ADF0068DB34 /* WeiboModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboModel.h; sourceTree = "<group>"; };
 		A391CDE01C474ADF0068DB34 /* WeiboModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboModel.m; sourceTree = "<group>"; };
 		A3D074FF1C4774AB0052752E /* MBProgressHUD+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Loading.h"; sourceTree = "<group>"; };
@@ -35,6 +43,7 @@
 		A3D075031C47810A0052752E /* PhotoCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionView.m; sourceTree = "<group>"; };
 		A3D075051C4783830052752E /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		A3D075061C4783830052752E /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		A3F559601C4C7FE100D5C56C /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
 		A3FB2D071C464E5900A4C10F /* 微博列表.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微博列表.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB2D0B1C464E5A00A4C10F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A3FB2D0D1C464E5A00A4C10F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,6 +54,7 @@
 		A3FB2D161C464E5B00A4C10F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3FB2D191C464E5C00A4C10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3FB2D1B1C464E5C00A4C10F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3FF3F3A1C4E262E0061CD4E /* d_aini@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "d_aini@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A377BDFF1C48FD5900E0A091 /* Foundation.framework in Frameworks */,
+				A377BDFD1C48FD3E00E0A091 /* CFNetwork.framework in Frameworks */,
+				A377BDFB1C48FCED00E0A091 /* CoreFoundation.framework in Frameworks */,
 				862EE53C369DEE01E5F4DA92 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +75,9 @@
 		8CBE0776AB494B11660A4366 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A377BDFE1C48FD5900E0A091 /* Foundation.framework */,
+				A377BDFC1C48FD3E00E0A091 /* CFNetwork.framework */,
+				A377BDFA1C48FCED00E0A091 /* CoreFoundation.framework */,
 				9AACCF8C95FEBFC59BBD6431 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -88,6 +104,7 @@
 		A3FB2D091C464E5900A4C10F /* 微博列表 */ = {
 			isa = PBXGroup;
 			children = (
+				A3F559601C4C7FE100D5C56C /* Emoticons.bundle */,
 				A3FB2D0D1C464E5A00A4C10F /* AppDelegate.h */,
 				A3FB2D0E1C464E5A00A4C10F /* AppDelegate.m */,
 				A3D075021C47810A0052752E /* PhotoCollectionView.h */,
@@ -114,6 +131,7 @@
 		A3FB2D0A1C464E5A00A4C10F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A3FF3F3A1C4E262E0061CD4E /* d_aini@2x.png */,
 				A3FB2D0B1C464E5A00A4C10F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -189,6 +207,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3FB2D1A1C464E5C00A4C10F /* LaunchScreen.storyboard in Resources */,
+				A3F559611C4C7FE100D5C56C /* Emoticons.bundle in Resources */,
+				A3FF3F3B1C4E262E0061CD4E /* d_aini@2x.png in Resources */,
 				A3FB2D171C464E5B00A4C10F /* Assets.xcassets in Resources */,
 				A3FB2D151C464E5B00A4C10F /* Main.storyboard in Resources */,
 			);
@@ -369,6 +389,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "微博列表/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.txh.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,6 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "微博列表/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.txh.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
