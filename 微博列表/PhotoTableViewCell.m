@@ -81,7 +81,6 @@
     [mentionExpression enumerateMatchesInString:text options:NSMatchingReportProgress range:textRange usingBlock:^(NSTextCheckingResult * _Nullable result, NSMatchingFlags flags, BOOL * _Nonnull stop) {
         UIImage *image = nil;
         if (result != nil) {
-            NSString *subString = [text substringWithRange:result.range];
 
             NSTextAttachment *imageAttachment = [NSTextAttachment new];
 
@@ -152,7 +151,6 @@
     if([detectionType isEqual:@"Mention"]) {
 
     }
-    NSString *text = [_weibo.weibo_text substringWithRange:characterRange];
 
     return YES;
 }
