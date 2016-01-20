@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ReactViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

@@ -11,6 +11,7 @@
 #import <MBProgressHUD.h>
 #import <WBHttpRequest+WeiboUser.h>
 #import <WBHttpRequest.h>
+#import <React/React/Base/RCTRootView.h>
 #import <UITableView+FDTemplateLayoutCell.h>
 
 @interface WeiboListViewController : UITableViewController <WBHttpRequestDelegate>

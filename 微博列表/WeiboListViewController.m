@@ -17,6 +17,7 @@
 #import "MBProgressHUD+Loading.h"
 #import "PhotoTableViewCell.h"
 #import "WeiboModel.h"
+#import "ReactViewController.h"
 
 @interface WeiboListViewController ()
 @property (strong, nonatomic) NSString *wbtoken;
@@ -37,6 +38,26 @@
     [self addHeaderRefresh];
     [MBProgressHUD wbShowText:@"载入中" inView:self.tableView];
     [self pullRefresh];
+
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showRnView)];
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
+
+- (void)showRnView {
+    // Override point for customization after application launch.
+
+    ReactViewController *rtVc = [[ReactViewController alloc] init];
+
+    NSURL *jsCodeLocation = [NSURL URLWithString:@"http://192.168.2.7:8081/ReactComponent/index.ios.bundle?platform=ios&dev=true"];
+
+    RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+                                                        moduleName:@"SimpleApp"
+                                                 initialProperties:nil
+                                                     launchOptions:nil];
+    rtVc.view.backgroundColor = [UIColor whiteColor];
+    rootView.frame = CGRectMake(0, 0, CGRectGetWidth([[UIScreen mainScreen] bounds]), CGRectGetHeight([[UIScreen mainScreen] bounds]));
+    [rtVc.view addSubview:rootView];
+    [self.navigationController pushViewController:rtVc animated:YES];
 }
 
 - (void)addHeaderRefresh {
@@ -86,12 +107,12 @@
                                         }
                                 queue:[NSOperationQueue currentQueue]
                 withCompletionHandler:^(WBHttpRequest *httpRequest, id result, NSError *error) {
-//                    NSLog(@"result:%@ == > ERROR:%@",result,[error description]);
+                    NSLog(@"result:%@ == > ERROR:%@",result,[error description]);
                     self.wbtoken = [result objectForKey:@"access_token"];
                     self.wbtoken = @"2.00RFRlhF8H_1MD376daaed7d4Xk1UB";
                     if (self.wbtoken != nil) {
                         // 2.获取公共微博信息
-                        [WBHttpRequest requestWithAccessToken:@"2.00RFRlhF8H_1MD376daaed7d4Xk1UB" url:@"https://api.weibo.com/2/statuses/public_timeline.json" httpMethod:@"GET" params:@{@"count":@"200"} delegate:self withTag:@"101"];
+                        [WBHttpRequest requestWithAccessToken:@"2.00RFRlhF8H_1MD376daaed7d4Xk1UB" url:@"https://api.weibo.com/2/statuses/public_timeline.json" httpMethod:@"GET" params:@{@"count":@"20"} delegate:self withTag:@"101"];
                     }
                 }];
 }
